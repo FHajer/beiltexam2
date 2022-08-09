@@ -14,7 +14,7 @@ pipeline {
 
         SONAR_PROJECT_KEY = "online-Hajer-Alotaibi-B2D2"
         SONAR_IP = "54.226.50.200"
-        SONAR_TOKEN = "sqp_b9a0ebba16cbb9fc0347e75ce98a60599cb0b26e"
+        SONAR_TOKEN = "sqp_3fb8d095331e68934e34630adcfa06ad6e1bc0e7"
 
     }
 
@@ -55,9 +55,9 @@ pipeline {
             steps {
                 sh '''
                 mvn clean verify sonar:sonar \
-                -Dsonar.projectKey=onsite-haya-B2D2 \
-                -Dsonar.host.url=http://52.23.193.18 \
-                -Dsonar.login=sqp_b9a0ebba16cbb9fc0347e75ce98a60599cb0b26e
+               -Dsonar.projectKey=online-Hajer-AlotaibiE-B2D2 \
+               -Dsonar.host.url=http://52.23.193.18 \
+               -Dsonar.login=sqp_3fb8d095331e68934e34630adcfa06ad6e1bc0e7
                 '''
             }
         }
